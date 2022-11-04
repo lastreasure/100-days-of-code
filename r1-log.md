@@ -38,3 +38,34 @@ function hoopCount (n) {
 ```
 
 ## R1D3 - *03.11.22*
+
+Continuing with React beta docs, read over and made notes about the Thinking in React section.
+
+### CodeWars
+Trolls are attacking your comment section!
+
+A common way to deal with this situation is to remove all of the vowels from the trolls' comments, neutralizing the threat.
+
+Your task is to write a function that takes a string and return a new string with all vowels removed.
+
+For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
+
+Note: for this kata y isn't considered a vowel.
+
+```
+function disemvowel(str) {
+  
+  let disemvowelledStr = "";
+ 
+  str.split("").filter((letter) => {
+    if (!"aeiou".includes(letter.toLowerCase())) {
+      disemvowelledStr += letter; 
+    }
+  })
+  
+  return disemvowelledStr
+}
+```
+
+
+## R1D4 - *04.11.22*
