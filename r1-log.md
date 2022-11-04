@@ -67,5 +67,12 @@ function disemvowel(str) {
 }
 ```
 
+Refactored with regex
+
+```
+function disemvowel(str) {
+  return str.replace(/[aeiou]/gi, '');
+}
+```
 
 ## R1D4 - *04.11.22*
