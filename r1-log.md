@@ -144,3 +144,65 @@ function switchItUp(n){
   return ["Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine"][n]
 }
 ```
+
+## R1D6 - *06.11.22*
+
+Started note taking on Describing the UI section of beta docs. Completed 2 codewars challenges. 
+
+### CodeWars
+
+Count the number of divisors of a positive integer n.
+
+Random tests go up to n = 500000.
+
+Examples (input --> output)
+4 --> 3 (1, 2, 4)
+5 --> 2 (1, 5)
+12 --> 6 (1, 2, 3, 4, 6, 12)
+30 --> 8 (1, 2, 3, 5, 6, 10, 15, 30)
+Note you should only return a number, the count of divisors. The numbers between parentheses are shown only for you to see which numbers are counted in each case.
+
+```
+function getDivisorsCnt(n){
+  let divisors =0
+  
+  for (let i=1; i<=n; i++) {
+    if (n % i == 0) {
+      divisors += 1
+    }
+  }
+  return divisors
+}
+```
+
+Deoxyribonucleic acid, DNA is the primary information storage molecule in biological systems. It is composed of four nucleic acid bases Guanine ('G'), Cytosine ('C'), Adenine ('A'), and Thymine ('T').
+
+Ribonucleic acid, RNA, is the primary messenger molecule in cells. RNA differs slightly from DNA its chemical structure and contains no Thymine. In RNA Thymine is replaced by another nucleic acid Uracil ('U').
+
+Create a function which translates a given DNA string into RNA.
+
+For example:
+
+"GCAT"  =>  "GCAU"
+The input string can be of arbitrary length - in particular, it may be empty. All input is guaranteed to be valid, i.e. each input string will only ever consist of 'G', 'C', 'A' and/or 'T'.
+
+```
+function DNAtoRNA(dna) {
+  let rna =""
+  dna.split("").forEach((letter) => {
+    if(letter === "T") {
+      letter = "U"
+    }
+    rna += letter
+  })
+  return rna
+}
+```
+
+Refactored with regex
+
+```
+function DNAtoRNA(dna){
+  return dna.replace(/T/g, 'U');
+}
+```
