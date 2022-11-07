@@ -206,3 +206,35 @@ function DNAtoRNA(dna){
   return dna.replace(/T/g, 'U');
 }
 ```
+
+## R1D7 - *07.11.22*
+
+Read up on exports and imports from the react beta docs, completed some codewars, brushed up on some interview questions https://github.com/sudheerj/reactjs-interview-questions#what-is-react 
+
+### CodeWars
+
+In this Kata we are passing a number (n) into a function.
+
+Your code will determine if the number passed is even (or not).
+
+The function needs to return either a true or false.
+
+Numbers may be positive or negative, integers or floats.
+
+Floats with decimal part non equal to zero are considered UNeven for this kata.
+
+```
+function testEven(n) {
+  return n % 2 == 0
+}
+```
+
+Bob needs a fast way to calculate the volume of a cuboid with three values: the length, width and height of the cuboid. Write a function to help Bob with this calculation.
+
+```
+class Kata {
+  static getVolumeOfCuboid(length, width, height) {
+   return length * width * height;
+  }
+}
+```
