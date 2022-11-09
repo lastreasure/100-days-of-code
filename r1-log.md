@@ -292,3 +292,50 @@ function decrypt(encryptedText, n) {
   return encryptedText;
 }
 ```
+
+## R1D9 - *09.11.22*
+
+Code wars task
+
+### CodeWars
+
+Write function bmi that calculates body mass index (bmi = weight / height2).
+
+if bmi <= 18.5 return "Underweight"
+
+if bmi <= 25.0 return "Normal"
+
+if bmi <= 30.0 return "Overweight"
+
+if bmi > 30 return "Obese"
+
+```
+function bmi(weight, height) {
+  const bmiAmount = weight / (height**2)
+  if (bmiAmount <=18.5) {
+    return "Underweight"
+  } else if (bmiAmount <=25) {
+    return "Normal"
+  } else if (bmiAmount <=30) {
+    return "Overweight"
+  } else {
+    return "Obese"
+  }
+}
+```
+switch case method:
+```
+function bmi(weight, height) {
+ let bmiAmount = weight / (height * height);
+ switch(true){
+   case bmiAmount <= 18.5:
+     return "Underweight";
+   case bmiAmount <= 25.0:
+     return "Normal";
+   case bmiAmount <= 30.0:
+     return "Overweight";
+   case bmiAmount > 30:
+     return "Obese";
+  }
+}
+```
