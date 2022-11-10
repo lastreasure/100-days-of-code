@@ -339,3 +339,7 @@ function bmi(weight, height) {
   }
 }
 ```
+
+## R1D10 - *10.11.22*
+
+Lots of react reading 
