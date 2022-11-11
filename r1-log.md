@@ -1,4 +1,4 @@
-# #100DaysOfCode Log - Round 1 
+# #100DaysOfCode Log 
 
 The log of my #100DaysOfCode challenge. Starting on [November, 1st, 2022].
 
@@ -343,3 +343,9 @@ function bmi(weight, height) {
 ## R1D10 - *10.11.22*
 
 Lots of react reading 
+
+## R2D11 - *11.11.22*
+Time to start a course of learning - React - The Complete Guide (incl Hooks, React Router, Redux) Course on Udemy.
+
+Completed half of Section 3
+
