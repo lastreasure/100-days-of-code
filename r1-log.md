@@ -349,3 +349,47 @@ Time to start a course of learning - React - The Complete Guide (incl Hooks, Rea
 
 Completed half of Section 3
 
+## Weekend off
+
+## R2D12 - *14.11.22*
+
+Just some codewars today
+
+### CodeWars
+
+Write a function named setAlarm which receives two parameters. The first parameter, employed, is true whenever you are employed and the second parameter, vacation is true whenever you are on vacation.
+
+The function should return true if you are employed and not on vacation (because these are the circumstances under which you need to set an alarm). It should return false otherwise. Examples:
+
+setAlarm(true, true) -> false
+setAlarm(false, true) -> false
+setAlarm(false, false) -> false
+setAlarm(true, false) -> true
+
+```
+function setAlarm(employed, vacation){
+  return employed && !vacation
+}
+```
+
+You get an array of numbers, return the sum of all of the positives ones.
+
+Example [1,-4,7,12] => 1 + 7 + 12 = 20
+
+Note: if there is nothing to sum, the sum is default to 0.
+
+```
+function positiveSum(arr) {
+  let sum = 0
+  arr.forEach((item) => { if (item > 0) {sum+=item} })
+  return sum
+}
+```
+
+alternative
+
+```
+function positiveSum(arr) {
+  return arr.filter(x => x > 0).reduce((a, b) => a+b, 0);
+}
+```
