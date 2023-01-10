@@ -13,7 +13,7 @@ https://www.youtube.com/watch?v=7_x4AuqHxlg
 
 ## R1D2 - *09.01.23*
 
-* Completed JavaScript refresher of React - The Complete Guide (incl Hooks, React Router, Redux)
+* Completed JavaScript refresher module of React - The Complete Guide (incl Hooks, React Router, Redux)
 
 * Challenges 1 and 2 of https://github.com/lydiahallie/javascript-questions?ref=java5cript.com
 
@@ -46,3 +46,32 @@ function fakeBin(x) {
 }
 ```
 
+## R1D2 - *10.01.23*
+
+* Completed 80% of the React BAsics & Working with Components section of React - The Complete Guide (incl Hooks, React Router, Redux)
+  
+* Challenges 3 and 4 of https://github.com/lydiahallie/javascript-questions?ref=java5cript.com
+
+
+### CodeWars
+
+Make a program that filters a list of strings and returns a list with only your friends name in it.
+
+If a name has exactly 4 letters in it, you can be sure that it has to be a friend of yours! Otherwise, you can be sure he's not...
+
+Ex: Input = ["Ryan", "Kieran", "Jason", "Yous"], Output = ["Ryan", "Yous"]
+
+i.e.
+
+friend ["Ryan", "Kieran", "Mark"] `shouldBe` ["Ryan", "Mark"]
+Note: keep the original order of the names in the output.
+
+
+```
+function friend(friends){
+  return friends.filter(friend => friend.length === 4 )
+}
+
+```
+
+## R1D3 - *11.01.23*
